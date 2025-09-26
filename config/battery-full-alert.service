@@ -1,0 +1,10 @@
+# ~/.config/systemd/user/battery-full-alert.service
+[Unit]
+Description=Battery Full Alert Script
+After=graphical-session.target
+
+[Service]
+Type=oneshot
+Environment=DISPLAY=:0
+Environment=XAUTHORITY=%h/.Xauthority
+ExecStart=/usr/bin/battery-full-alert

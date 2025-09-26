@@ -1,0 +1,16 @@
+#!/bin/bash
+set -e
+
+case "$1" in
+configure)
+	echo "Battery Full Alert installed successfully!"
+	echo ""
+	echo "To enable for current user, run:"
+	echo "  systemctl --user enable --now battery-full-alert.timer"
+	echo ""
+	echo "Configuration file: ~/.config/battery-full-alert.conf"
+	echo "(Copy from /etc/battery-full-alert/battery-full-alert.conf to customize)"
+	;;
+esac
+
+exit 0

@@ -1,0 +1,8 @@
+Package: battery-full-alert
+Version: 0.0.0
+Architecture: all
+Depends: upower, libnotify-bin, pulseaudio-utils
+Section: utils
+Priority: optional
+Maintainer: caesar <caesarmuksid@gmail.com>
+Description: Notify when the battery is full on GNOME.

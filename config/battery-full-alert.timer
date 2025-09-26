@@ -1,0 +1,13 @@
+# ~/.config/systemd/user/battery-full-alert.timer
+
+[Unit]
+Description=Run Battery Full Alert every 5 minutes
+
+[Timer]
+OnBootSec=1min
+OnUnitActiveSec=5min
+Persistent=true
+Unit=battery-full-alert.service
+
+[Install]
+WantedBy=timers.target
